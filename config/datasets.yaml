@@ -1,7 +1,48 @@
 project:
   name: "Healthcare Fraud Detection & Investigation"
   source: "CMS DE-SynPUF"
+  source_url: "https://www.cms.gov/data-research/statistics-trends-and-reports/medicare-claims-synthetic-public-use-files/cms-2008-2010-data-entrepreneurs-synthetic-public-use-file-de-synpuf/de10-sample-1"
 
 datasets:
   sample_1:
     enabled: true
+    sample_number: 1
+    years:
+      - 2008
+      - 2009
+      - 2010
+
+    files:
+      beneficiary_2008:
+        type: "beneficiary"
+        year: 2008
+
+      beneficiary_2009:
+        type: "beneficiary"
+        year: 2009
+
+      beneficiary_2010:
+        type: "beneficiary"
+        year: 2010
+
+      inpatient:
+        type: "inpatient"
+        years: "2008-2010"
+
+      outpatient:
+        type: "outpatient"
+        years: "2008-2010"
+
+      prescription_drug_events:
+        type: "pde"
+        years: "2008-2010"
+
+      carrier_1:
+        type: "carrier"
+        part: 1
+        years: "2008-2010"
+
+      carrier_2:
+        type: "carrier"
+        part: 2
+        years: "2008-2010"
