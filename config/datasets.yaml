@@ -1,1 +1,7 @@
+project:
+  name: "Healthcare Fraud Detection & Investigation"
+  source: "CMS DE-SynPUF"
 
+datasets:
+  sample_1:
+    enabled: true
